@@ -1,0 +1,27 @@
+.buttons_button {
+    display: flex;
+    border: none;
+    color: teal;
+    background: none;
+    padding: 10px;
+    transition: 1s;
+    justify-content: center;
+}
+
+.buttons_button:hover {
+    color: hsl(180, 100%, 40%);
+}
+
+.buttons_button:disabled {
+    color: hsl(180, 23%, 41%);
+}
+
+@media (max-width: 767px) {
+    .buttons_button {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}

@@ -1,0 +1,28 @@
+.section__item {
+    margin: 2px;
+    background-color: white;
+    padding: 15px;
+}
+
+.section__header {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        align-self: flex-start;
+    }
+}
+
+.section__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .section__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
