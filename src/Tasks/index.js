@@ -5,7 +5,7 @@ const Tasks = (propos) => (
     {propos.tasks.map((task) => (
       <li
         className={`list__item 
-        ${task.done && propos.hideDoneTasks ? "list__item--hidden" : ""}`}
+        ${task.done && propos.hideDone ? "list__item--hidden" : ""}`}
       >
         <button className="list__button list__button--done">
           {task.done ? "✔" : ""}
