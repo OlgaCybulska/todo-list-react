@@ -1,4 +1,4 @@
-.buttons_button {
+.buttons__button {
     display: flex;
     border: none;
     color: teal;
@@ -8,16 +8,16 @@
     justify-content: center;
 }
 
-.buttons_button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 40%);
 }
 
-.buttons_button:disabled {
+.buttons__button:disabled {
     color: hsl(180, 23%, 41%);
 }
 
 @media (max-width: 767px) {
-    .buttons_button {
+    .buttons__button {
         flex-direction: column;
         align-items: center;
         justify-content: center;
