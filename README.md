@@ -4,12 +4,12 @@ On this page you can create your own to-do list!
 
 1. Enter your task and press the button "DODAJ ZADANIE"
 2. Your new task added to the task list.
-![screen1](https://olgacybulska.github.io/todo-list-react/public/new-task-added-screen.png)
+![screen1](https://github.com/OlgaCybulska/todo-list-react/blob/main/public/new-task-added-screen.png)
 3. If you done your task - press the green button
-![screen2](https://olgacybulska.github.io/todo-list-react/public/task-done-screen.png)
+![screen2](https://github.com/OlgaCybulska/todo-list-react/blob/main/public/task-done-screen.png)
 4. To delete - press the red button.
 5. You can hide or show completed tasks. and mark all as done.
-![screen3](https://olgacybulska.github.io/todo-list-react/public/markAlldone-toggle-screen.png)
+![screen3](https://github.com/OlgaCybulska/todo-list-react/blob/main/public/markAlldone-toggle-screen.png)
 
 ## Technologies used to make the page:
 - HTLM
