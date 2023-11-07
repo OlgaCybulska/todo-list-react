@@ -6,6 +6,7 @@
     padding: 10px;
     transition: 1s;
     justify-content: center;
+    cursor: pointer;
 }
 
 .buttons__button:hover {
