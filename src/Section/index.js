@@ -1,12 +1,12 @@
-import "./style.css";
+import { SectionHeader, Container } from "./styled";
 
 const Section = ({ title, body, extrHeaderContent }) => (
-  <section className="section">
-    <div className="section__item section__grid">
-      <h2 className="section__header">{title}</h2>
+  <section>
+    <Container $grid>
+      <SectionHeader>{title}</SectionHeader>
       {extrHeaderContent}
-    </div>
-    <div className="section__item">{body}</div>
+    </Container>
+    <Container>{body}</Container>
   </section>
 );
 
