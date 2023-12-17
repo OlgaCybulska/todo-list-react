@@ -34,15 +34,19 @@ export const Button = styled.button`
   transition: 1s;
   margin-left: 10px;
 
+  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
+    transform: scale(1.05);
+    flex: 1 1 300px;
+    margin: 20px;
+  }
+
   &:hover {
     background-color: hsl(180, 80%, 40%);
     transform: scale(1.2);
     border-radius: 3px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint}px) {
-      transform: scale(1.05);
-      flex: 1 1 300px;
-      margin: 0px;
+      transform: scale(1.06);
     }
   }
 `;

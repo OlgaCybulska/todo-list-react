@@ -6,8 +6,4 @@ export const MainContainer = styled.main`
   margin-top: 5px;
   padding: 40px;
   margin: auto;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
-    max-width: 500px;
-  }
 `;
