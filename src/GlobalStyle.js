@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
   font-family: "Geologica", sans-serif;
@@ -8,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+#root {
   max-width: 1000px;
   width: 100%;
   margin-top: 5px;
@@ -23,3 +26,4 @@ html {
     max-width: 500px;
   }
 }
+`;
