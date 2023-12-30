@@ -1,10 +1,14 @@
 import React, { useState, useRef } from "react";
 import { FormTask, Input, Button } from "./styled";
+import { useDispatch } from "react-redux";
+import { addTask } from "../tasksSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
-const Form = ({ addNewTask }) => {
+const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
-
   const inputRef = useRef(null);
+
+  const dispatch = useDispatch();
 
   const focusInput = () => {
     inputRef.current.focus();
@@ -19,8 +23,13 @@ const Form = ({ addNewTask }) => {
       return;
     }
 
-    addNewTask(newTaskContentTrimmed);
-    setNewTaskContent("");
+    dispatch(
+      addTask({
+        content: newTaskContentTrimmed,
+        done: false,
+        id: nanoid(),
+      })
+    );
   };
 
   return (
@@ -32,9 +41,7 @@ const Form = ({ addNewTask }) => {
         type="text"
         placeholder="Co jest do zrobienia?"
       ></Input>
-      <Button className="form__button" onClick={focusInput}>
-        Dodaj zadanie
-      </Button>
+      <Button onClick={focusInput}>Dodaj zadanie</Button>
     </FormTask>
   );
 };

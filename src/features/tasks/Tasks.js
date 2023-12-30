@@ -1,5 +1,5 @@
 import Form from "./Form";
-import Tasks from "./TaskList";
+import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
@@ -11,49 +11,22 @@ const theme = {
   breakpoint: 767,
 };
 
-function Taskss() {
-  const {
-    tasks,
-    hideDone,
-    toggleHideDone,
-    removeTask,
-    toggleTaskDone,
-    setAllDone,
-    addNewTask,
-  } = useTask();
-
+function Tasks() {
   return (
     <ThemeProvider theme={theme}>
       <Container>
         <Header title="Lista zadań" />
 
-        <Section
-          title="Dodaj nowe zadanie"
-          body={<Form addNewTask={addNewTask} />}
-        />
+        <Section title="Dodaj nowe zadanie" body={<Form />} />
 
         <Section
           title="Lista zadań"
-          body={
-            <Tasks
-              tasks={tasks}
-              hideDone={hideDone}
-              removeTask={removeTask}
-              toggleTaskDone={toggleTaskDone}
-            />
-          }
-          extrHeaderContent={
-            <Buttons
-              tasks={tasks}
-              hideDone={hideDone}
-              toggleHideDone={toggleHideDone}
-              setAllDone={setAllDone}
-            />
-          }
+          body={<TaskList />}
+          extrHeaderContent={<Buttons />}
         />
       </Container>
     </ThemeProvider>
   );
 }
 
-export default Taskss;
+export default Tasks;

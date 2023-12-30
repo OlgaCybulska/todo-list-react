@@ -1,3 +1,3 @@
-import Taskss from "./features/tasks/Tasks";
+import Tasks from "./features/tasks/Tasks";
 
-export const App = () => <Taskss />;
+export const App = () => <Tasks />;
