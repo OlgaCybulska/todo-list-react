@@ -42,7 +42,7 @@ export const Button = styled.button`
 
   &:hover {
     background-color: hsl(180, 80%, 40%);
-    transform: scale(1.2);
+    transform: scale(1.1);
     border-radius: 3px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint}px) {
