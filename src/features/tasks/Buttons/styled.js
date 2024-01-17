@@ -17,6 +17,8 @@ export const Button = styled.button`
   &:disabled {
     color: hsl(180, 60%, 75%);
   }
+`;
+export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint}px) {
     flex-direction: column;
     align-items: center;
