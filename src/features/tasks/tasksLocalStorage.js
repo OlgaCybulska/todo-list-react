@@ -8,5 +8,5 @@ export const getTasksFromLocalStorage = () => {
   if (!tasksFromLocalStorage) {
     return [];
   }
-  JSON.parse(tasksFromLocalStorage);
+  return JSON.parse(tasksFromLocalStorage);
 };
