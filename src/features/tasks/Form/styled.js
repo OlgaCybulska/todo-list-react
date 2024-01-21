@@ -11,19 +11,6 @@ export const FormTask = styled.form`
   }
 `;
 
-export const Input = styled.input`
-  flex-basis: 1000px;
-  border-radius: 0%;
-  margin-right: 20px;
-  padding: 10px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint}px) {
-    flex: 1 2 500px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-`;
-
 export const Button = styled.button`
   background-color: hsl(180, 100%, 25%);
   color: white;
