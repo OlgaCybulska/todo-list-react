@@ -32,7 +32,7 @@ export const Content = styled.span`
     `}
 `;
 
-export const Button = styled.button`
+export const TasksListButton = styled.button`
   border: none;
   height: 35px;
   width: 35px;
