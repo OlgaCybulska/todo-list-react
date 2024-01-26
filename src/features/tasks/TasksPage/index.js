@@ -6,6 +6,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
+import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
 const theme = {
   breakpoint: 767,
@@ -17,7 +18,11 @@ function TasksPage() {
       <Container>
         <Header title="Lista zadań" />
 
-        <Section title="Dodaj nowe zadanie" body={<Form />} />
+        <Section
+          title="Dodaj nowe zadanie"
+          body={<Form />}
+          extrHeaderContent={<FetchExampleTasksButton />}
+        />
 
         <Section title="Wyszukiwarka" body={<Search />} />
 
