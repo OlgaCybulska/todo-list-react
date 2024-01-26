@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const List = styled.ul`
   margin: 2px;
@@ -62,4 +63,7 @@ export const TasksListButton = styled.button`
         background-color: hsl(348, 83%, 70%);
       }
     `}
+`;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
