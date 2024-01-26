@@ -1,13 +1,13 @@
-import { SectionHeader, Container } from "./styled";
+import { SectionHeader, Container, StyledSection } from "./styled";
 
 const Section = ({ title, body, extrHeaderContent }) => (
-  <section>
+  <StyledSection>
     <Container $grid>
       <SectionHeader>{title}</SectionHeader>
       {extrHeaderContent}
     </Container>
     <Container>{body}</Container>
-  </section>
+  </StyledSection>
 );
 
 export default Section;
