@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
-export const SectionHeader = styled.section`
-  margin: 2px;
+export const StyledSection = styled.section`
+  margin: 7px;
   background-color: white;
   padding: 15px;
 
@@ -11,19 +11,23 @@ export const SectionHeader = styled.section`
 `;
 
 export const Container = styled.div`
-  margin: 2px;
+  margin: 5px;
   background-color: white;
-  padding: 15px;
+  padding: 10px;
 
   ${({ $grid }) =>
     $grid &&
     css`
       display: grid;
-      grid-template-columns: 3fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       align-items: center;
 
       @media (max-width: ${({ theme }) => theme.breakpoint}px) {
         grid-template-columns: 1fr;
       }
     `}
+`;
+export const SectionHeader = styled.header`
+  font-weight: bold;
+  font-size: 20px;
 `;
