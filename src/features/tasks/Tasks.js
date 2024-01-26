@@ -4,8 +4,8 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import useTask from "../../useTask";
 import { ThemeProvider } from "styled-components";
+import FetchExampleTasksButton from "./TasksPage/FetchExampleTasksButton";
 
 const theme = {
   breakpoint: 767,
@@ -17,7 +17,11 @@ function Tasks() {
       <Container>
         <Header title="Lista zadań" />
 
-        <Section title="Dodaj nowe zadanie" body={<Form />} />
+        <Section
+          title="Dodaj nowe zadanie"
+          extrHeaderContent={<FetchExampleTasksButton />}
+          body={<Form />}
+        />
 
         <Section
           title="Lista zadań"
