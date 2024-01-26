@@ -34,7 +34,7 @@ const tasksSlice = createSlice({
       state.tasks = tasks;
       state.loading = false;
     },
-    fetchExampleTasksFalse: (state, { payload: tasks }) => {
+    fetchExampleTasksError: (state, { payload: tasks }) => {
       state.loading = false;
     },
   },
@@ -48,7 +48,7 @@ export const {
   removeTask,
   fetchExampleTasks,
   fetchExampleTasksSuccess,
-  fetchExampleTasksFalse,
+  fetchExampleTasksError,
 } = tasksSlice.actions;
 
 export const selectTasksState = (state) => state.tasks;
@@ -76,5 +76,7 @@ export const selectTasksByQuery = (state, query) => {
     content.toUpperCase().includes(query.trim().toUpperCase())
   );
 };
+export const selectLoading = (state) =>
+  selectTasksState(state).loading === true;
 
 export default tasksSlice.reducer;
